@@ -1,0 +1,140 @@
+:root {
+  color-scheme: light dark;
+  --bg: #f8f6f1;
+  --surface: rgba(255, 252, 247, 0.88);
+  --text: #1f2430;
+  --muted: #5c6576;
+  --accent: #a34b1e;
+  --border: rgba(31, 36, 48, 0.12);
+  --shadow: 0 20px 40px rgba(40, 28, 15, 0.08);
+}
+
+body[data-theme="dark"] {
+  --bg: #171310;
+  --surface: rgba(29, 22, 18, 0.84);
+  --text: #f8f2eb;
+  --muted: #d3c7bb;
+  --accent: #ffb27d;
+  --border: rgba(248, 242, 235, 0.12);
+  --shadow: 0 24px 44px rgba(0, 0, 0, 0.28);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background:
+    radial-gradient(circle at top, rgba(163, 75, 30, 0.16), transparent 35%),
+    linear-gradient(180deg, var(--bg), color-mix(in srgb, var(--bg) 88%, #000 12%));
+  color: var(--text);
+}
+
+.container {
+  width: min(960px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 5rem 0 3rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  margin: 0;
+  max-width: 12ch;
+  font-size: clamp(2.5rem, 6vw, 4.6rem);
+  line-height: 0.98;
+}
+
+.lede {
+  max-width: 42rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+.theme-toggle {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  padding: 0.85rem 1.2rem;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+}
+
+main {
+  padding-bottom: 4rem;
+}
+
+.profile-card {
+  display: grid;
+  grid-template-columns: minmax(180px, 220px) 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.profile-image-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  width: min(100%, 220px);
+  aspect-ratio: 4 / 5;
+  display: block;
+  object-fit: cover;
+  border-radius: 28px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  background: color-mix(in srgb, var(--surface) 72%, white 28%);
+}
+
+.profile-copy p {
+  margin-bottom: 0;
+}
+
+section {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
+}
+
+h2 {
+  margin-top: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+  line-height: 1.8;
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding-top: 3.5rem;
+  }
+
+  .profile-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  section {
+    padding: 1.2rem;
+  }
+}

@@ -1,0 +1,9 @@
+.codex
+.DS_Store
+Thumbs.db
+
+# Local env or editor artifacts
+.env
+.env.*
+.vscode/
+.idea/

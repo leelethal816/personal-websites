@@ -1,0 +1,12 @@
+services:
+  lee:
+    build:
+      context: ./sites/lee
+    ports:
+      - "8080:80"
+
+  jacqueline:
+    build:
+      context: ./sites/jacqueline
+    ports:
+      - "8081:80"
