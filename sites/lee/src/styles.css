@@ -186,6 +186,19 @@ a {
   color: var(--accent);
 }
 
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link-icon {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  fill: var(--accent);
+}
+
 @media (max-width: 640px) {
   .hero {
     padding-top: 3.5rem;
