@@ -1,19 +1,19 @@
-name: Deploy Lee site to Azure Container Apps
+name: Deploy Jacq site to Azure Container Apps
 
 on:
   push:
     branches:
       - main
     paths:
-      - "sites/lee/**"
-      - ".github/workflows/deploy-lee.yml"
+      - "sites/jacqueline/**"
+      - ".github/workflows/deploy-jacq.yml"
 
 permissions:
   id-token: write
   contents: read
 
 env:
-  IMAGE_NAME: lee-site
+  IMAGE_NAME: jacq-site
   IMAGE_TAG: ${{ github.sha }}
 
 jobs:
@@ -32,30 +32,30 @@ jobs:
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
       - name: Log in to ACR
-        run: az acr login --name ${{ vars.AZURE_ACR_NAME_LEE }}
+        run: az acr login --name ${{ vars.AZURE_ACR_NAME_JACQ }}
 
       - name: Build Docker image
         run: |
           docker build \
-            -t ${{ vars.AZURE_ACR_LOGIN_SERVER_LEE }}/$IMAGE_NAME:$IMAGE_TAG \
-            -f sites/lee/Dockerfile \
-            sites/lee
+            -t ${{ vars.AZURE_ACR_LOGIN_SERVER_JACQ }}/$IMAGE_NAME:$IMAGE_TAG \
+            -f sites/jacqueline/Dockerfile \
+            sites/jacqueline
 
       - name: Push Docker image
         run: |
-          docker push ${{ vars.AZURE_ACR_LOGIN_SERVER_LEE }}/$IMAGE_NAME:$IMAGE_TAG
+          docker push ${{ vars.AZURE_ACR_LOGIN_SERVER_JACQ }}/$IMAGE_NAME:$IMAGE_TAG
 
       - name: Update Azure Container App
         run: |
           az containerapp update \
-            --name ${{ vars.AZURE_CONTAINER_APP_NAME_LEE }} \
-            --resource-group ${{ vars.AZURE_RESOURCE_GROUP_LEE }} \
-            --image ${{ vars.AZURE_ACR_LOGIN_SERVER_LEE }}/$IMAGE_NAME:$IMAGE_TAG
+            --name ${{ vars.AZURE_CONTAINER_APP_NAME_JACQ }} \
+            --resource-group ${{ vars.AZURE_RESOURCE_GROUP_JACQ }} \
+            --image ${{ vars.AZURE_ACR_LOGIN_SERVER_JACQ }}/$IMAGE_NAME:$IMAGE_TAG
 
       - name: Show deployed revision image
         run: |
           az containerapp show \
-            --name ${{ vars.AZURE_CONTAINER_APP_NAME_LEE }} \
-            --resource-group ${{ vars.AZURE_RESOURCE_GROUP_LEE }} \
+            --name ${{ vars.AZURE_CONTAINER_APP_NAME_JACQ }} \
+            --resource-group ${{ vars.AZURE_RESOURCE_GROUP_JACQ }} \
             --query properties.template.containers[0].image \
             --output tsv
