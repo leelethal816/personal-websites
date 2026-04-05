@@ -8,3 +8,4 @@ log_analytics_workspace_name = ""
 user_assigned_identity_name  = ""
 image_repository             = ""
 image_tag                    = ""
+
