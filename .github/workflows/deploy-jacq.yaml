@@ -7,6 +7,7 @@ on:
     paths:
       - "sites/jacqueline/**"
       - ".github/workflows/deploy-jacq.yml"
+  workflow_dispatch:
 
 permissions:
   id-token: write
@@ -59,3 +60,14 @@ jobs:
             --resource-group ${{ vars.AZURE_RESOURCE_GROUP_JACQ }} \
             --query properties.template.containers[0].image \
             --output tsv
+
+  print-image-and-tag:
+    runs-on: ubuntu-latest
+    needs: build-and-deploy
+    steps:
+      - name: Get code
+        uses: actions/checkout@v4
+
+      - name: Print image and tag
+        run: |
+          echo "Deployed image: ${{ vars.AZURE_ACR_LOGIN_SERVER_JACQ }}/$IMAGE_NAME:$IMAGE_TAG"
