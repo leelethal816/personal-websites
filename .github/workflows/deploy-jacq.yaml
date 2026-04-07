@@ -7,7 +7,6 @@ on:
     paths:
       - "sites/jacqueline/**"
       - ".github/workflows/deploy-jacq.yml"
-  workflow_dispatch:
 
 permissions:
   id-token: write

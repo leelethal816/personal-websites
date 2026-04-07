@@ -7,7 +7,6 @@ on:
     paths:
       - "sites/lee/**"
       - ".github/workflows/deploy-lee.yml"
-  workflow_dispatch:
 
 permissions:
   id-token: write
