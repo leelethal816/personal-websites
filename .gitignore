@@ -13,3 +13,7 @@ Thumbs.db
 *.tfstate
 *.tfstate.*
 *.tfvars
+
+# Local resume documents
+/sites/lee/Resume - Lee Zhang.pdf
+/sites/lee/Resume - Lee Zhang.pages
