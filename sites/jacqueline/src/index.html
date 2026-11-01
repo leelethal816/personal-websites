@@ -3,247 +3,102 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jacqueline Zhang | Portfolio</title>
-    <meta
-      name="description"
-      content="Jacqueline Zhang's professional portfolio and resume site."
-    />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Crect width='64' height='64' rx='14' fill='%230e1b2a'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dominant-baseline='central' font-family='Helvetica, Arial, sans-serif' font-size='38' fill='white'%3EJ%3C/text%3E%3C/svg%3E"
-    />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="Jacqueline Zhang is an educator and linguist teaching adult education at Austin Community College. Explore her work in language teaching, applied linguistics, research, and writing." />
+    <title>Jacqueline Zhang | Language, Learning & Connection</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link rel="stylesheet" href="./styles.css" />
     <script defer src="./script.js"></script>
   </head>
   <body>
-    <header class="hero">
-      <div class="container">
-        <h1>Jacqueline Zhang</h1>
-        <p class="lede">
-          Trilingual Spanish educator and linguist with higher-education
-          teaching experience.
-        </p>
-        <button class="theme-toggle" type="button" aria-label="Toggle theme">
-          Toggle theme
-        </button>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="wordmark" href="#top" aria-label="Jacqueline Zhang, back to top">J<span>.</span>Z<span>.</span></a>
+        <nav aria-label="Main navigation">
+          <a href="#about">About</a><a href="#teaching">Teaching</a><a href="#research">Research</a><a href="#contact">Say hello <span aria-hidden="true">↗</span></a>
+        </nav>
+        <button class="theme-toggle" type="button" hidden aria-label="Switch to evening theme" aria-pressed="false"><span class="theme-icon" aria-hidden="true">☾</span><span class="theme-label">Evening</span></button>
       </div>
     </header>
 
-    <main class="container">
-      <section class="profile-card">
-        <div class="profile-image-wrap">
-          <img
-            class="profile-image"
-            src="./profile-photo.jpeg"
-            alt="Professional profile portrait for Jacqueline Zhang"
-          />
+    <main id="main">
+      <section class="hero container" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Language / Learning / Connection</p>
+          <h1 id="hero-title">Jacqueline<br /> <em>Zhang.</em></h1>
+          <p class="hero-role">Educator, linguist, and a believer in<br class="desktop-break" /> what we can learn from one another.</p>
+          <p class="hero-description">I teach adult learners at Austin Community College. My work brings together language education, applied linguistics, and cross-cultural understanding.</p>
+          <div class="hero-actions"><a class="button-link" href="#teaching">Explore my teaching <span aria-hidden="true">↗</span></a><a class="quiet-link" href="#about">A little about me <span aria-hidden="true">↓</span></a></div>
+          <p class="location-note"><span aria-hidden="true">✳</span> Based in Hutto, Texas · Teaching in Austin</p>
         </div>
-        <div class="profile-copy">
-          <h2>At A Glance</h2>
-          <ul>
-            <li>Teacher of Record, Spanish at Baylor University</li>
-            <li>Waco, TX</li>
-            <li>Spanish (Bilingual), Mandarin Chinese (Intermediate)</li>
-          </ul>
+        <div class="hero-portrait">
+          <div class="portrait-backdrop" aria-hidden="true"></div>
+          <figure class="portrait-print"><img src="./profile-photo.jpeg" width="1900" height="2375" alt="Jacqueline Zhang smiling outdoors in soft afternoon light" fetchpriority="high" /><figcaption>A life shaped by language & curiosity.</figcaption></figure>
+          <svg class="botanical" viewBox="0 0 150 240" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M57 236C61 175 97 125 91 23M68 173C34 163 21 138 17 115C49 122 66 143 68 173ZM81 127C111 120 130 96 133 73C102 83 84 103 81 127ZM89 82C61 76 49 53 47 32C76 40 87 58 89 82ZM91 36C106 27 113 12 111 3C95 12 91 23 91 36Z"/></svg>
+          <span class="portrait-side-note" aria-hidden="true">A FEW WORDS, MANY WORLDS</span>
+        </div>
+      </section>
+      <div class="intro-ribbon"><div class="container"><span>Adult education</span><span class="ribbon-mark" aria-hidden="true">✳</span><span>Applied linguistics</span><span class="ribbon-mark" aria-hidden="true">✳</span><span>Intercultural learning</span></div></div>
+
+      <section class="section container about-section" id="about" aria-labelledby="about-title">
+        <div class="section-label"><span>01</span> About</div>
+        <div class="about-layout">
+          <h2 id="about-title">Language is more<br /> than words.<br /> <em>It’s how we connect.</em></h2>
+          <div class="about-copy"><p class="lead-copy">I’m Jacqueline, an educator with an MA in Spanish, Linguistics track, and a BA in Linguistics from Baylor University.</p><p>I’m interested in how people learn languages, how classrooms can welcome different experiences, and how language helps us take part in our communities. My experience spans adult education, undergraduate Spanish instruction, academic research, writing, and community-based learning.</p><p>Before finding my way to linguistics, I spent three years in professional cello training during my undergraduate studies. I moved toward work where language and intercultural understanding are part of everyday life. That curiosity continues to shape how I teach and learn.</p></div>
         </div>
       </section>
 
-      <section>
-        <h2>Career Profile</h2>
-        <p>
-          Trilingual Spanish educator and linguist with higher-education
-          teaching experience. Uses research-informed, student-centered
-          instruction to support diverse learners. Brings cross-linguistic and
-          multicultural perspectives through study of Spanish and Mandarin Chinese. 
-          Committed to inclusive pedagogy, community engagement,
-          and meaningful collaboration with departmental colleagues as Teacher of Record,
-          Spanish at Baylor University.
-        </p>
+      <section class="section container" id="teaching" aria-labelledby="teaching-title">
+        <div class="section-label"><span>02</span> Teaching</div>
+        <div class="section-intro"><h2 id="teaching-title">Room to ask.<br /> <em>Confidence to participate.</em></h2><p>I bring a student-centered approach to language learning, with attention to the different experiences, needs, and goals learners bring to the classroom.</p></div>
+        <article class="current-position">
+          <div class="position-heading"><div><p class="eyebrow">Current appointment</p><h3>Austin Community College</h3><p class="position-role">AE Instructor · Adult Education</p></div><p class="date-label">July 2026 — Present<br /> Austin, Texas</p></div>
+          <p class="position-summary">I develop and adapt materials for in-person and online classes, maintain course records and student communication, and coordinate with ESL and HSE colleagues on placement, attendance, progress testing, and follow-up support.</p>
+          <div class="course-grid" aria-label="Courses taught at Austin Community College">
+            <div class="course"><span class="course-number">01 / ESL</span><h4>Beginner ESL 2</h4><p>English as a second language</p></div>
+            <div class="course"><span class="course-number">02 / HSE</span><h4>Spanish Language Arts</h4><p>High School Equivalency</p></div>
+            <div class="course"><span class="course-number">03 / HSE</span><h4>Spanish Math 2</h4><p>High School Equivalency</p></div>
+          </div>
+        </article>
+        <div class="subsection-heading"><h3>Across classrooms & communities</h3><span>Selected teaching experience</span></div>
+        <div class="teaching-list">
+          <article class="experience-entry"><p class="date-label">Jan 2025 — May 2026</p><div><h3>Teacher of Record</h3><p class="institution">Baylor University · Waco, Texas</p><p>I taught Elementary Spanish 1301 lecture and language laboratory, integrating culture, pronunciation, listening, and reading comprehension. My teaching included a flipped-classroom approach, assessment design, and Canvas and VHL Central to support learning.</p></div></article>
+          <article class="experience-entry"><p class="date-label">Aug 2024 — May 2026</p><div><h3>Graduate Teaching Assistant</h3><p class="institution">Baylor University · Waco, Texas</p><p>I supported Spanish learners at all levels through 8–10 hours of weekly Charlas conversation practice. I also observed and assisted in my mentor Isabel Colorado’s Elementary Spanish classes during Fall 2024.</p></div></article>
+          <article class="experience-entry"><p class="date-label">July — Aug 2025</p><div><h3>Study Abroad Support Staff</h3><p class="institution">Baylor Center for Global Engagement · Denia, Spain</p><p>I supported Intermediate Spanish 2310 and Medical Spanish 2320, working with faculty and students to create a welcoming setting for language practice and intercultural learning.</p></div></article>
+          <article class="experience-entry"><p class="date-label">Aug 2024 — Apr 2025</p><div><h3>Volunteer Assistant Teacher</h3><p class="institution">La Puerta Waco · Waco, Texas</p><p>I co-taught GED in Spanish for adult learners using culturally responsive instruction, and helped coordinate heritage Spanish students’ participation in community learning sessions.</p></div></article>
+        </div>
+        <div class="teaching-tools"><p class="eyebrow">Tools for teaching & inquiry</p><p>Canvas LMS <span>·</span> VHL Central <span>·</span> Padlet <span>·</span> Hypothesis <span>·</span> Canva <span>·</span> Praat <span>·</span> Google Workspace <span>·</span> Microsoft Office</p></div>
       </section>
 
-      <section>
-        <h2>Education</h2>
-        <ul>
-          <li>
-            Baylor University, Waco, TX — Master of Arts in Spanish Linguistics,
-            GPA 4.0, Dean's List (All Semesters), May 2026
-          </li>
-          <li>
-            Baylor University, Waco, TX — Bachelor of Arts in Linguistics, GPA
-            3.94, Minors in Chinese and Music, Dean's List (All Semesters), May
-            2024
-          </li>
-        </ul>
+      <section class="research-section" id="research" aria-labelledby="research-title">
+        <div class="container section">
+          <div class="section-label"><span>03</span> Research</div>
+          <div class="research-intro"><div><p class="eyebrow">Language in context</p><h2 id="research-title">Listening closely.<br /> <em>Learning what language reveals.</em></h2></div><p>My interests include language teaching, applied linguistics, bilingual learning, and cross-cultural communication.</p></div>
+          <div class="research-grid">
+            <article class="research-entry"><p class="date-label">Spring 2025 / Sociolinguistics</p><h3>Waco Spanish Speakers<br /> Corpus Project</h3><p class="institution">Research Assistant · Dr. Isabella Calafate</p><p>I conducted ethnographic interviews, anonymized transcripts, and analyzed audio for a sociolinguistic corpus. I presented findings to the research team, contributing to its understanding of Spanish-speaking communities in Central Texas.</p></article>
+            <article class="research-entry"><p class="date-label">Spring 2024 / Bilingual acquisition</p><h3>Learning across<br /> two languages</h3><p class="institution">Research Assistant · Dr. Melisa Dracos, Baylor University</p><p>I designed activities supporting minority-language use at La Vega Primary, observed dual-language instruction, and helped create visual stimuli. I administered the Bilingual English-Spanish Assessment for research on irregular past-tense acquisition and presented outcomes to Experiential Learning faculty.</p></article>
+          </div>
+          <div class="research-notes"><div><h4>Research training</h4><p>Social and Behavioral Research<br /> CITI Program</p></div><div><h4>Fieldwork beyond linguistics</h4><p>Volunteer Field Crew Member, Tel Shimron Excavations · June–July 2023. I worked with an international team investigating the site’s historical purpose and documenting archaeological evidence.</p></div></div>
+        </div>
       </section>
 
-      <section>
-        <h2>Experience</h2>
-
-        <h3>Baylor University, Department of Modern Languages and Cultures</h3>
-        <p>Waco, Texas — Fall 2024 to Present</p>
-        <p>
-          Teacher of Record, lecture and lab for SPA 1301: Elementary Spanish —
-          Spring 2025 to Present
-        </p>
-        <ul>
-          <li>
-            Delivers weekly instruction to 40+ undergraduate students, applying
-            a flipped-classroom approach and applied linguistics research to
-            reduce foreign language anxiety, increase participation, and
-            facilitate language acquisition
-          </li>
-          <li>
-            Designs and implements assessments and analyzes outcomes to adjust
-            instruction and differentiate learning pathways
-          </li>
-          <li>
-            Integrates Canvas and VHL Central to structure coursework, manage
-            communication, and support distance learning
-          </li>
-        </ul>
-        <p>Graduate Assistant for mentor Isabel Colorado — Fall 2024 to Spring 2025</p>
-        <ul>
-          <li>
-            Contributed to instructional planning and facilitated class sessions
-            to improve student learning outcomes
-          </li>
-          <li>
-            Led 10 hours per week of conversation practice for Spanish learners
-            of all levels, improving fluency and confidence
-          </li>
-        </ul>
-        <p>
-          Research Assistant for Dr. Isabella Calafate, Waco Spanish Speakers
-          Corpus Project — Spring 2025
-        </p>
-        <ul>
-          <li>
-            Conducted ethnographic interviews, anonymized transcripts, and
-            analyzed audio data for a sociolinguistic corpus
-          </li>
-          <li>
-            Presented findings to the research team, deepening understanding of
-            Spanish-speaking communities in Central Texas
-          </li>
-        </ul>
-
-        <h3>Baylor Center for Global Engagement, Study Abroad Office</h3>
-        <p>Denia, Spain — Summer 2025</p>
-        <p>Support Staff</p>
-        <ul>
-          <li>
-            Fostered an immersive, welcoming environment for language practice,
-            promoting respectful intercultural learning
-          </li>
-          <li>
-            Assisted instructional delivery for Intermediate Spanish 2310 and
-            Medical Spanish 2320 through classroom support
-          </li>
-          <li>
-            Collaborated with faculty and students to enhance academic
-            engagement and support positive learning outcomes
-          </li>
-        </ul>
-
-        <h3>La Puerta</h3>
-        <p>Waco, TX — Fall 2024 to Spring 2025</p>
-        <p>Volunteer GED in Spanish Teaching Assistant and Co-Teacher</p>
-        <ul>
-          <li>
-            Co-taught GED in Spanish for adult students using culturally
-            responsive instruction to build academic confidence
-          </li>
-          <li>
-            Collaborated with Baylor Spanish faculty to coordinate heritage
-            Spanish students' participation in GED sessions, fostering community
-            engagement and experiential learning
-          </li>
-        </ul>
-
-        <h3>Baylor University, Department of English</h3>
-        <p>Waco, Texas — Spring 2024</p>
-        <p>Research Assistant for Dr. Melisa Dracos</p>
-        <ul>
-          <li>
-            Designed instructional activities promoting minority-language use
-            during research sessions at La Vega Primary and conducted classroom
-            observations to study dual-language instructional strategies
-          </li>
-          <li>
-            Created visual stimuli within the design team and administered the
-            Bilingual English-Spanish Assessment to collect data for research on
-            irregular past-tense acquisition
-          </li>
-          <li>
-            Presented research outcomes to Experiential Learning faculty,
-            highlighting implications for bilingual pedagogy
-          </li>
-        </ul>
-
-        <h3>Center for Writing Excellence</h3>
-        <p>Waco, TX — Spring 2022 to Spring 2024</p>
-        <p>Undergraduate Writing Consultant</p>
-        <ul>
-          <li>
-            Advised 7 to 10 students per week with clear and structured feedback
-            in both in-person and online consultations
-          </li>
-          <li>
-            Prepared written summaries after each consultation to support
-            program documentation, tracking, and assessment
-          </li>
-        </ul>
-
-        <h3>Tel Shimron Excavations</h3>
-        <p>Shimron, Israel — Summer 2023</p>
-        <p>Dig Volunteer</p>
-        <ul>
-          <li>
-            Collaborated with an international research team to document and
-            preserve artifacts, applying attention to detail
-          </li>
-        </ul>
+      <section class="section container" id="education" aria-labelledby="education-title">
+        <div class="section-label"><span>04</span> Education</div>
+        <div class="education-layout"><div><h2 id="education-title">A foundation<br /> <em>for continued inquiry.</em></h2><p class="section-aside">Baylor University<br /> College of Arts & Sciences<br /> Waco, Texas</p></div><div class="degrees"><article class="degree"><p class="date-label">Aug 2024 — May 2026</p><h3>Master of Arts in Spanish</h3><p>Linguistics track</p><p class="degree-note">GPA 4.0</p></article><article class="degree"><p class="date-label">Aug 2019 — May 2024</p><h3>Bachelor of Arts in Linguistics</h3><p>Minors in Chinese and Music</p><p class="degree-note">GPA 3.94 · Dean’s List, all semesters</p></article><div class="academic-honors"><p class="eyebrow">Academic honors / Spring 2024</p><p>Outstanding Linguistics Academic Honor<br /> Charles G. Smith</p></div></div></div>
       </section>
 
-      <section>
-        <h2>Additional Qualifications</h2>
-        <ul>
-          <li>
-            Languages: Spanish (Bilingual), Mandarin Chinese (Intermediate),
-            Portuguese (Novice High / Intermediate Low; strongest in reading and
-            listening; 6 graduate hours completed)
-          </li>
-          <li>
-            Technical Skills: MS Office, Google Workspace, Canvas LMS, Canva,
-            VHL Central, Padlet, Hypothesis, Praat
-          </li>
-          <li>
-            Awards: Outstanding Linguistics Academic Honor; Charles G. Smith
-            (Spring 2024)
-          </li>
-          <li>
-            Experience: Hola Cultura SPEL Copyediting Intern (Spring 2024); CITI
-            Program in Social and Behavioral Research; Clinical and interpreter
-            observations at Waco Family Medicine and Advanced Medical Spanish
-            guest instruction
-          </li>
-        </ul>
+      <section class="section container" id="languages" aria-labelledby="languages-title">
+        <div class="section-label"><span>05</span> Languages & Writing</div>
+        <div class="section-intro"><h2 id="languages-title">Different languages.<br /> <em>A shared desire to understand.</em></h2><p>From conversation practice to thoughtful revision, I’m interested in helping people express their ideas and find their voice.</p></div>
+        <div class="language-writing-grid">
+          <div class="language-panel"><h3>A multilingual perspective</h3><dl class="languages"><div><dt>English</dt><dd>Native or bilingual</dd></div><div><dt>Spanish</dt><dd>Native or bilingual</dd></div><div><dt>Mandarin Chinese</dt><dd>Limited working proficiency</dd></div><div><dt>Portuguese</dt><dd>Elementary proficiency</dd></div></dl><p class="language-note">Each language offers another way to listen, learn, and connect.</p></div>
+          <div class="writing-experience"><article><p class="date-label">Jan — May 2024 / Hola Cultura</p><h3>Copy Editing Intern</h3><p>I edited and formatted community-focused digital content for clarity, consistency, and accessibility, collaborating with the Storytelling Program for Experiential Learning editorial team and meeting production deadlines.</p></article><article><p class="date-label">Feb 2022 — May 2024 / Baylor University</p><h3>Undergraduate Writing Consultant</h3><p>I consulted with 7–10 students each week, offering scaffolded feedback in person and online. I also mentored new consultants through co-tutoring, structured observation, and feedback, while participating in ongoing training in teaching writing.</p></article></div>
+        </div>
       </section>
 
-      <section>
-        <h2>Contact</h2>
-        <p><a href="tel:+12816823460">(281) 682-3460</a></p>
-        <p>
-          <a href="mailto:jacquelineszhang@gmail.com"
-            >jacquelineszhang@gmail.com</a
-          >
-        </p>
-        <p>
-          <a href="https://www.linkedin.com/in/zhang-jacqueline/"
-            >linkedin.com/in/zhang-jacqueline</a
-          >
-        </p>
-      </section>
+      <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="container contact-inner"><div><p class="eyebrow">06 / A conversation starts here</p><h2 id="contact-title">Let’s keep<br /> <em>the conversation going.</em></h2><p>For teaching, academic collaboration,<br /> or an exchange of ideas, I’d love to connect.</p></div><div class="contact-links"><a class="contact-email" href="mailto:jacquelineszhang@gmail.com">jacquelineszhang@gmail.com <span aria-hidden="true">↗</span></a><a class="quiet-link" href="https://www.linkedin.com/in/zhang-jacqueline/" target="_blank" rel="noopener noreferrer">Find me on LinkedIn <span aria-hidden="true">↗</span></a></div></div></section>
     </main>
+    <footer class="container site-footer"><a class="wordmark" href="#top" aria-label="Jacqueline Zhang, back to top">J<span>.</span>Z<span>.</span></a><p>Jacqueline Zhang <span aria-hidden="true">/</span> Language, learning & connection</p><a href="#top">Back to top <span aria-hidden="true">↑</span></a></footer>
   </body>
 </html>
