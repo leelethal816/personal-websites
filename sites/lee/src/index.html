@@ -3,248 +3,142 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lee Zhang | Portfolio</title>
-    <meta
-      name="description"
-      content="Lee Zhang's professional website featuring infrastructure leadership, Linux systems administration, and technology strategy."
-    />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="description" content="Lee Zhang, MBA, MSIS — Infrastructure Engineer in Austin, Texas. Linux, GCP, AI agents, and automation for reliable infrastructure at scale." />
+    <title>Lee Zhang | Infrastructure & Automation</title>
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <link rel="stylesheet" href="./styles.css" />
     <script defer src="./script.js"></script>
   </head>
   <body>
-    <header class="hero">
-      <div class="container">
-        <h1>Lee Zhang</h1>
-        <p class="lede">
-          Infrastructure Engineer at McLane Company focused on Infrastructure as
-          Code, OpenShift platform development, and reliable hybrid environment
-          delivery.
-        </p>
-        <div class="hero-actions">
-          <a class="button-link" href="https://www.linkedin.com/in/leetzhang/" target="_blank" rel="noreferrer">
-            View LinkedIn
-          </a>
-          <button class="theme-toggle" type="button" aria-label="Toggle theme">
-            Toggle theme
-          </button>
-        </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="wordmark" href="#top" aria-label="Lee Zhang, back to top">lz<span>.</span></a>
+        <nav aria-label="Main navigation">
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact <span aria-hidden="true">↗</span></a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false" hidden>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>
+          <span class="theme-label">Light</span>
+        </button>
       </div>
     </header>
 
-    <main class="container">
-      <section class="profile-card">
-        <div class="profile-image-wrap">
-          <img
-            class="profile-image"
-            src="./profile-photo.jpeg"
-            alt="Professional profile portrait for Lee Zhang"
-          />
+    <div class="hero container" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="accent-dot" aria-hidden="true"></span> Infrastructure Engineer · Austin, TX</p>
+        <h1>Lee Zhang<span class="title-dot">.</span></h1>
+        <p class="credentials">MBA / MSIS</p>
+        <p class="hero-statement">Less repetition.<br /> More <em>possibility.</em></p>
+        <p class="lede">I build automation for the infrastructure behind the applications. Linux, cloud platforms, and AI agents — connected by a drive to make complex systems work better.</p>
+        <div class="hero-actions">
+          <a class="button-link" href="#projects">Explore my work <span aria-hidden="true">↘</span></a>
+          <a class="text-link" href="https://www.linkedin.com/in/leetzhang/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
         </div>
-        <div class="profile-copy">
-          <h2>At a Glance</h2>
-          <p>
-            Lee is an Infrastructure Engineer at McLane Company with experience
-            spanning Terraform, OpenShift, Ansible, and Linux administration. 
-            His work centers on building reliable platforms,
-            improving operational consistency, and supporting application
-            delivery across hybrid environments.
-          </p>
-        </div>
-      </section>
+      </div>
+      <div class="topology" aria-hidden="true">
+        <div class="diagram-heading"><span>THE ENGINEERING THREAD</span><span>01 / 04</span></div>
+        <svg class="topology-lines" viewBox="0 0 480 460" fill="none">
+          <defs><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="currentColor" opacity=".18"/></pattern></defs>
+          <rect width="480" height="460" fill="url(#dots)"/>
+          <circle class="orbit" cx="240" cy="222" r="151"/>
+          <circle class="orbit inner-orbit" cx="240" cy="222" r="105"/>
+          <path class="connection" d="M240 90V222M90 222H390M240 222V354"/>
+          <path class="connection secondary" d="M240 90L390 222L240 354L90 222Z"/>
+          <circle class="junction" cx="240" cy="90" r="4"/><circle class="junction" cx="90" cy="222" r="4"/><circle class="junction" cx="390" cy="222" r="4"/><circle class="junction" cx="240" cy="354" r="4"/>
+        </svg>
+        <div class="diagram-node node-cloud"><span class="node-index">01</span><strong>Cloud</strong><small>GCP / Terraform</small></div>
+        <div class="diagram-node node-linux"><span class="node-index">02</span><strong>Linux</strong><small>Hybrid infrastructure</small></div>
+        <div class="diagram-center"><span class="center-mark">lz<span>.</span></span><small>AUTOMATION</small></div>
+        <div class="diagram-node node-ai"><span class="node-index">03</span><strong>AI agents</strong><small>Workflow automation</small></div>
+        <div class="diagram-node node-platform"><span class="node-index">04</span><strong>Platforms</strong><small>Containers / GitOps</small></div>
+        <div class="diagram-caption"><span class="accent-dot"></span> From repeatable tasks to reusable systems.</div>
+      </div>
+    </div>
 
-      <section>
-        <h2>About</h2>
-        <p>
-          Lee Zhang is an infrastructure and platform engineer who focuses on
-          scalable automation, container platforms, and dependable systems
-          operations. His recent experience at McLane Company reflects a strong
-          balance of hands-on troubleshooting, platform support, and
-          infrastructure delivery.
-        </p>
-        <p>
-          He works across Infrastructure as Code, OpenShift development, Linux
-          environments, and deployment, partnering with cross-functional
-          teams to keep applications stable and environments consistent. With an
-          MBA and MSIS, Lee also brings a business-aware mindset to technical
-          decision making and long-term platform reliability.
-        </p>
-      </section>
-
-      <section>
-        <h2>Experience</h2>
-        <div class="item-list">
-          <article class="item-card">
-            <h3>Infrastructure Engineer</h3>
-            <p class="item-meta">McLane Company | 02/2026 to Present</p>
-            <ul class="achievement-list">
-              <li>Developed and implemented Infrastructure as Code solutions for cloud provisioning and configuration.</li>
-              <li>Supported scalable, repeatable infrastructure delivery across hybrid environments.</li>
-              <li>Collaborated with cross-functional teams to support deployments and maintain platform reliability.</li>
-            </ul>
-          </article>
-          <article class="item-card">
-            <h3>Linux Server Administrator</h3>
-            <p class="item-meta">McLane Company | 03/2025 to 02/2026</p>
-            <ul class="achievement-list">
-              <li>Performed system-level troubleshooting and optimization for containerized and platform-based workloads.</li>
-              <li>Maintained Linux-based environments with a focus on stability, performance, and operational consistency.</li>
-            </ul>
-          </article>
-          <article class="item-card">
-            <h3>Automation Test Engineer</h3>
-            <p class="item-meta">Texas Farm Bureau Insurance | 08/2024 to 03/2025</p>
-            <ul class="achievement-list">
-              <li>Supported automation-focused quality engineering efforts in an enterprise insurance environment.</li>
-              <li>Worked with technical teams to improve testing coverage, delivery confidence, and release readiness.</li>
-              <li>Contributed to reliable software validation through repeatable test processes and collaboration.</li>
-            </ul>
-          </article>
-          <article class="item-card">
-            <h3>Automation Test Engineer Intern</h3>
-            <p class="item-meta">Texas Farm Bureau Insurance | 12/2023 to 05/2024</p>
-            <ul class="achievement-list">
-              <li>Assisted with test automation and validation efforts while gaining hands-on experience in enterprise software delivery.</li>
-              <li>Supported QA workflows, issue tracking, and coordination with development and testing teams.</li>
-              <li>Built a foundation in structured automation practices and production-focused software quality work.</li>
-            </ul>
-          </article>
-          <article class="item-card">
-            <h3>Graduate Assistant</h3>
-            <p class="item-meta">Baylor University | 08/2022 to 12/2023</p>
-            <ul class="achievement-list">
-              <li>Supported Baylor University academic and operational work while completing graduate studies.</li>
-              <li>Strengthened analytical, communication, and cross-functional coordination skills in a university setting.</li>
-              <li>Built the foundation for later work in information systems, automation, and infrastructure-focused roles.</li>
-            </ul>
-          </article>
+    <main id="main" class="container">
+      <section class="glance section" aria-labelledby="glance-title">
+        <div class="portrait-wrap"><img src="./profile-photo.jpeg" alt="Lee Zhang" class="profile-image" width="220" height="275" /><span class="portrait-label">THE PERSON BEHIND THE SYSTEMS</span></div>
+        <div class="glance-copy">
+          <p class="eyebrow">01 / At a Glance</p>
+          <h2 id="glance-title">An engineer’s curiosity.<br /> A business-aware mindset.</h2>
+          <p>I’m an Infrastructure Engineer at McLane Company, working across Linux, Google Cloud, and container platforms. With an MBA and MSIS from Baylor, I connect hands-on engineering with the business problems it needs to solve.</p>
+          <div class="glance-facts"><div><strong>1,000+</strong><span>Linux servers in environments I’ve worked across</span></div><div><strong>Linux → Cloud → AI</strong><span>The technologies connecting my work</span></div></div>
         </div>
       </section>
 
-      <section>
-        <h2>Skills</h2>
-        <ul class="tag-list">
-          <li>Terraform</li>
-          <li>Infrastructure as Code</li>
-          <li>Cloud provisioning</li>
-          <li>Hybrid infrastructure management</li>
-          <li>OpenShift</li>
-          <li>Kubernetes</li>
-          <li>Docker</li>
-          <li>Container lifecycle management</li>
-          <li>Linux: SLES, RHEL, OEL, Ubuntu</li>
-          <li>Ansible</li>
-          <li>Performance tuning</li>
-          <li>CI/CD</li>
-          <li>Deployment automation</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Certifications / Education</h2>
-        <div class="item-list">
-          <article class="item-card">
-            <h3>Microsoft Certified: Azure Fundamentals (AZ-900)</h3>
-            <p class="item-meta">Certification | 02/21/2026</p>
-            <p>
-              Foundational Microsoft Azure certification covering core cloud
-              concepts, Azure services, security, pricing, and governance.
-            </p>
-          </article>
-          <article class="item-card">
-            <h3>Master of Business Administration</h3>
-            <p class="item-meta">Baylor University | 07/2022 to 05/2024</p>
-            <p>
-              Graduate business education focused on strategic thinking,
-              stakeholder alignment, and operational decision making.
-            </p>
-          </article>
-          <article class="item-card">
-            <h3>Master of Science in Information Systems</h3>
-            <p class="item-meta">Baylor University | 07/2022 to 05/2024</p>
-            <p>
-              Advanced information systems training that complements Lee's
-              infrastructure and platform work with systems-level analysis.
-            </p>
-          </article>
-          <article class="item-card">
-            <h3>Bachelor of Science in Biology</h3>
-            <p class="item-meta">Baylor University | 08/2018 to 05/2022</p>
-            <p>
-              Undergraduate studies that built a strong analytical foundation and
-              supported a later transition into technology and information systems.
-            </p>
-          </article>
+      <section class="section section-layout" aria-labelledby="about-title">
+        <div class="section-heading"><p class="eyebrow">02 / About</p><h2 id="about-title">Build once.<br /> Improve what’s next.</h2></div>
+        <div class="section-body about-copy">
+          <p class="large-copy">My work starts with a simple question: how can we make this more consistent, repeatable, and useful?</p>
+          <p>I’ve worked on large-scale hybrid infrastructure spanning Oracle Linux, SUSE, Red Hat, and Ubuntu. I use Ansible, Terraform, Python, and Bash to automate provisioning, patching, configuration, and OS upgrades, and contribute to cloud migration and infrastructure modernization.</p>
+          <p>I also develop AI agents for workflows across Linux servers, containers, and infrastructure environments. Alongside GCP, Kubernetes, OpenShift, and GitOps, I’m exploring how AI and traditional automation can make infrastructure easier to build, deploy, and manage.</p>
         </div>
       </section>
 
-      <section>
-        <h2>Projects</h2>
-        <div class="item-list">
-          <article class="item-card">
-            <h3>SLES and OEL OS Upgrade Automation</h3>
-            <p class="item-meta">Ansible automation</p>
-            <p>
-              Automated SLES and OEL server os upgrade workflows using Ansible,
-              reducing manual intervention and improving upgrade efficiency,
-              standardization, and operational consistency across environments.
-            </p>
-          </article>
-          <article class="item-card">
-            <h3>Cloud Infrastructure Automation</h3>
-            <p class="item-meta">Terraform and provisioning workflows</p>
-            <p>
-              Designed and implemented IaC solutions for provisioning and
-              configuring cloud resources, enabling scalable and repeatable
-              deployments.
-            </p>
-          </article>
-          <article class="item-card">
-            <h3>OpenShift Platform Management</h3>
-            <p class="item-meta">Container operations and reliability</p>
-            <p>
-              Supported deployment, monitoring, and troubleshooting of
-              containerized applications on OpenShift, improving platform
-              stability and operational reliability.
-            </p>
-          </article>
+      <section class="section section-layout" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading"><p class="eyebrow">03 / Experience</p><h2 id="experience-title">A throughline<br /> of automation.</h2><p class="section-note">From software quality to the platforms it runs on.</p></div>
+        <div class="timeline section-body">
+          <article class="timeline-item current"><div class="role-topline"><span class="item-meta">Feb 2026 — Present</span><span class="current-label">Current</span></div><h3>Infrastructure Engineer</h3><p class="company">McLane Company, Inc.</p><ul><li>I develop Ansible and scripting automation for provisioning, configuration, patching, and OS upgrades across environments with 1,000+ Linux servers.</li><li>I build Terraform configurations for Linux VMs on GCP and AI agents for infrastructure workflows.</li><li>I create Docker-based Ansible Execution Environments and work with Kubernetes, OpenShift, GKE, and Argo CD on container deployments and GitOps.</li><li>I contribute to cloud migration and modernization across hybrid environments.</li></ul></article>
+          <article class="timeline-item"><p class="item-meta">Mar 2025 — Feb 2026</p><h3>Linux Server Administrator</h3><p class="company">McLane Company, Inc.</p><ul><li>I built reusable Ansible playbooks, job templates, and workflows for Linux provisioning, patching, configuration, and upgrades.</li><li>I led Manhattan application server configuration automation, reducing configuration time from one hour to five minutes per server.</li><li>I automated security patching for approximately 500 Linux servers, reducing execution time from one week to four hours, and helped automate Oracle Linux 7-to-8 upgrades.</li><li>I worked with VMware vSphere, Bash, and Python across on-premises and cloud environments.</li></ul></article>
+          <article class="timeline-item"><p class="item-meta">Aug 2024 — Mar 2025</p><h3>Automation Test Engineer</h3><p class="company">Texas Farm Bureau Insurance Companies</p><ul><li>I developed Java, Selenium, and TestNG automation to replace manual testing, including a two-hour checkout process used by 20+ team members.</li><li>I built Guidewire API and UI tests with Cucumber and Node.js, plus reusable smoke, regression, and end-to-end tests.</li><li>I used SQL for data validation and troubleshooting, collaborating on releases, CI/CD workflows, and cloud migration projects.</li></ul></article>
+          <article class="timeline-item"><p class="item-meta">Dec 2023 — May 2024</p><h3>Automation Test Engineer Intern</h3><p class="company">Texas Farm Bureau Insurance Companies</p><ul><li>I helped develop in-house automation tools with an intern team and supported smoke, regression, and functional testing across five test regions.</li><li>I worked with developers and business analysts to turn requirements into test cases, using Azure DevOps to track plans and defects.</li><li>I supported the Guidewire cloud migration through application validation and release preparation.</li></ul></article>
+          <article class="timeline-item"><p class="item-meta">Aug 2022 — Dec 2023</p><h3>Graduate Assistant</h3><p class="company">Baylor University · Hankamer School of Business</p><ul><li>I wrote Python scripts to process and organize data from 1,000+ academic articles, reducing research preparation time by one month.</li><li>I helped teach advanced Python to 100 undergraduate and graduate students, covering NumPy, Pandas, APIs, visualization, and machine learning.</li><li>I provided technical guidance and assignment evaluation for SQL and database management coursework.</li></ul></article>
         </div>
       </section>
 
-      <section>
-        <h2>Achievements</h2>
-        <ul class="achievement-list">
-          <li>Delivered Infrastructure as Code solutions for improved deployment repeatability.</li>
-          <li>Automated OEL and SLES os upgrade workflows to reduce manual time and effort.</li>
-          <li>Supported OpenShift platform reliability through deployment, monitoring, and troubleshooting work.</li>
-        </ul>
+      <section class="section section-layout" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading"><p class="eyebrow">04 / Skills</p><h2 id="skills-title">The tools<br /> behind the work.</h2></div>
+        <div class="skill-groups section-body">
+          <div class="skill-group"><h3><span>01</span> Cloud & Infrastructure</h3><ul class="tag-list"><li>Google Cloud Platform</li><li>Compute Engine</li><li>Cloud Run</li><li>Cloud Storage</li><li>Terraform / IaC</li><li>VMware vSphere</li><li>Proxmox</li><li>NetApp</li></ul></div>
+          <div class="skill-group"><h3><span>02</span> Automation & AI</h3><ul class="tag-list"><li>Ansible</li><li>Python</li><li>Bash</li><li>YAML</li><li>AI agents</li><li>Ansible Execution Environments</li><li>Configuration management</li></ul></div>
+          <div class="skill-group"><h3><span>03</span> Containers & GitOps</h3><ul class="tag-list"><li>Kubernetes</li><li>OpenShift</li><li>GKE</li><li>Docker</li><li>Argo CD</li><li>GitOps</li><li>CI/CD</li></ul></div>
+          <div class="skill-group"><h3><span>04</span> Linux & Observability</h3><ul class="tag-list"><li>Oracle Linux</li><li>SUSE / SLES</li><li>Red Hat / RHEL</li><li>Ubuntu</li><li>Dynatrace</li><li>Splunk</li></ul></div>
+          <div class="skill-group"><h3><span>05</span> Software & Testing</h3><ul class="tag-list"><li>Java</li><li>JavaScript / Node.js</li><li>SQL</li><li>Selenium</li><li>TestNG</li><li>Cucumber</li><li>API & UI testing</li><li>Azure DevOps</li><li>Bitbucket</li><li>Jira</li><li>NumPy / Pandas</li></ul></div>
+        </div>
       </section>
 
-      <section>
-        <h2>Contact</h2>
-        <p>
-          The best public way to connect with Lee is through LinkedIn.
-        </p>
-        <p>
-          <a
-            class="social-link"
-            href="https://www.linkedin.com/in/leetzhang/"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Visit Lee Zhang's LinkedIn profile"
-          >
-            <svg
-              class="social-link-icon"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path
-                d="M4.98 3.5a1.75 1.75 0 1 1 0 3.5 1.75 1.75 0 0 1 0-3.5ZM3.5 8.75h2.96V20.5H3.5V8.75Zm5.21 0h2.84v1.6h.04c.4-.75 1.36-1.84 3.3-1.84 3.53 0 4.18 2.23 4.18 5.13v6.86h-2.96v-6.08c0-1.45-.03-3.31-2.1-3.31-2.11 0-2.43 1.58-2.43 3.21v6.18H8.71V8.75Z"
-              />
-            </svg>
-          </a>
-        </p>
+      <section class="section section-layout" aria-labelledby="education-title">
+        <div class="section-heading"><p class="eyebrow">05 / Certifications & Education</p><h2 id="education-title">Technical depth.<br /> Broader perspective.</h2></div>
+        <div class="education-list section-body">
+          <article class="education-item"><span class="education-type">Certification / Feb 2026</span><h3>Microsoft Certified: Azure Fundamentals</h3><p>Microsoft · AZ-900</p></article>
+          <article class="education-item"><span class="education-type">Certification / Jan 2025</span><h3>Guidewire Certified Associate — InsuranceSuite Analyst</h3><p>Guidewire Software</p></article>
+          <article class="education-item"><span class="education-type">Graduate / Jul 2022 — May 2024</span><h3>Master of Business Administration</h3><p>Baylor University · Business Analytics</p></article>
+          <article class="education-item"><span class="education-type">Graduate / Jul 2022 — May 2024</span><h3>Master of Science in Information Systems</h3><p>Baylor University · Hankamer School of Business</p></article>
+          <article class="education-item"><span class="education-type">Undergraduate / Aug 2018 — May 2022</span><h3>Bachelor of Science in Biology</h3><p>Baylor University</p></article>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-intro"><div><p class="eyebrow">06 / Projects</p><h2 id="projects-title">Making the repeatable,<br /> <em>reusable.</em></h2></div><p class="section-note">Selected work across infrastructure, automation, and cloud platforms.</p></div>
+        <div class="project-grid">
+          <article class="project-card featured-project"><div class="project-top"><span class="project-index">01 / CLOUD</span><span class="project-symbol" aria-hidden="true">↗</span></div><h3>GCP infrastructure automation</h3><p>I built Terraform configurations to provision and configure Linux VMs on Google Cloud, making infrastructure delivery repeatable.</p><ul class="project-tags"><li>Terraform</li><li>GCP</li><li>Linux</li></ul></article>
+          <article class="project-card"><div class="project-top"><span class="project-index">02 / AI & AUTOMATION</span><span class="project-symbol" aria-hidden="true">✳</span></div><h3>AI-powered infrastructure workflows</h3><p>I developed AI agents to automate workflows across Linux servers, containers, and infrastructure environments.</p><ul class="project-tags"><li>AI agents</li><li>Infrastructure</li></ul></article>
+          <article class="project-card"><div class="project-top"><span class="project-index">03 / AUTOMATION TOOLING</span><span class="project-symbol" aria-hidden="true">⌘</span></div><h3>Containerized Ansible environments</h3><p>I packaged automation tools and dependencies into custom Docker-based Ansible Execution Environments for consistent, reusable execution.</p><ul class="project-tags"><li>Ansible</li><li>Docker</li></ul></article>
+          <article class="project-card"><div class="project-top"><span class="project-index">04 / PLATFORMS</span><span class="project-symbol" aria-hidden="true">⋈</span></div><h3>Kubernetes & GitOps</h3><p>I worked with Kubernetes, OpenShift, GKE, and Argo CD on container deployments and GitOps-based infrastructure automation.</p><ul class="project-tags"><li>Kubernetes</li><li>Argo CD</li><li>GitOps</li></ul></article>
+          <article class="project-card"><div class="project-top"><span class="project-index">05 / MODERNIZATION</span><span class="project-symbol" aria-hidden="true">↑</span></div><h3>Linux OS upgrade automation</h3><p>I developed Oracle Linux and SLES upgrade automation with Ansible, including Oracle Linux 7-to-8 upgrades across test and production.</p><ul class="project-tags"><li>Ansible</li><li>Oracle Linux</li><li>SLES</li></ul></article>
+          <article class="project-card"><div class="project-top"><span class="project-index">06 / CONFIGURATION</span><span class="project-symbol" aria-hidden="true">≡</span></div><h3>Manhattan server configuration</h3><p>I led Ansible automation for Manhattan application servers, reducing configuration time from one hour to five minutes per server.</p><ul class="project-tags"><li>Ansible</li><li>Linux</li><li>Configuration</li></ul></article>
+          <article class="project-card wide-project"><div class="project-top"><span class="project-index">07 / OPERATIONS</span><span class="project-symbol" aria-hidden="true">↻</span></div><h3>Automated security patching</h3><p>I developed Ansible playbooks to automate security patching for approximately 500 Linux servers, reducing execution time from one week to four hours.</p><ul class="project-tags"><li>Ansible</li><li>Security patching</li><li>Linux</li></ul></article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="achievements-title">
+        <p class="eyebrow">07 / Achievements</p><h2 id="achievements-title">The impact of less manual work.</h2>
+        <div class="impact-grid">
+          <article class="impact-item"><p class="impact-before">From 1 hour to</p><h3>5 <span>minutes</span></h3><p>Configuration per Manhattan application server through Ansible automation.</p><span class="impact-context">McLane · Linux administration</span></article>
+          <article class="impact-item"><p class="impact-before">From 1 week to</p><h3>4 <span>hours</span></h3><p>Security patching execution for approximately 500 Linux servers.</p><span class="impact-context">McLane · Linux administration</span></article>
+          <article class="impact-item"><p class="impact-before">Research preparation reduced by</p><h3>1 <span>month</span></h3><p>Python automation processing and organizing data from 1,000+ academic articles.</p><span class="impact-context">Baylor · Graduate research</span></article>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div><p class="eyebrow">08 / Contact</p><h2 id="contact-title">Good systems start<br /> with a <em>conversation.</em></h2><p>Infrastructure, automation, or what comes next.<br /> The best way to reach me is on LinkedIn.</p></div>
+        <a class="button-link contact-link" href="https://www.linkedin.com/in/leetzhang/" target="_blank" rel="noopener noreferrer">Let’s connect <span aria-hidden="true">↗</span></a>
       </section>
     </main>
+    <footer class="container site-footer"><a class="wordmark" href="#top" aria-label="Lee Zhang, back to top">lz<span>.</span></a><p>Lee Zhang <span aria-hidden="true">/</span> Infrastructure & Automation</p><a href="#top">Back to top <span aria-hidden="true">↑</span></a></footer>
   </body>
 </html>
